@@ -1,0 +1,12 @@
+version: "2"
+services:
+  foodie-app:
+    build: ./foodie-app
+    container_name: "Foodie-Server"
+    ports:
+      - "8000:5000"
+  login-service:
+    build: ./login-service
+    container_name: "Login-Server"
+    ports:
+      - "8080:5000"
